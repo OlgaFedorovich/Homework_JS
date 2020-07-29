@@ -134,14 +134,14 @@ function summa(number) {
     let sum = 0;
     let numString = String(number);   
     for(i = 0; i < numString.length; i++) {
-        sum += +number[i];
+        sum += +numString[i];
     } 
-    console.log(sum);
     if (sum > 9) {
-        number = sum; 
-        summa(number);
+        summa(sum); 
     }
+    console.log(sum);
 }
+
 summa(237598);
 
 /*10. Дан массив с числами (передается параметром). Выведите последовательно его
@@ -156,5 +156,8 @@ function printArray(array) {
 let i = 0;
 
 printArray([-20, 5, 85, 4, 7, 8, 9]);
+
+
+
 
 
