@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(bg5.jpg) no-repeat center center/cover;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.list-body {
+    margin: 100px auto 0;
+    width: 500px;
+    min-height: 500px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgb(170, 165, 165);
+}
+
+
+.list-header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(13, 13, 14);
+    text-transform: uppercase;
+    background: rgba(151, 157, 187, 0.5);
+    border-bottom: 1px solid rgb(175, 164, 164);
+    font-weight: 700;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    background: #ededed;
+}
+
+.list-input {
+    margin: 20px auto;
+    width: 70%;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid rgb(31, 29, 29);
+    outline: none;
+}
+
+.task-body {
+    width: 90%;
+    background: rgb(207, 232, 240);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto 10px;
+}
+
+.list-body .task-body:nth-of-type(even) {
+    background: rgba(190, 206, 231, 0.5);
+}
+
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    background: rgb(87, 83, 121);
+    
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.task-name {
+    font-size: 20px;
+    overflow: auto;
+    width: 80%;
+}
+
+.checked {
+    background: url(checked3.png ), #9db9b1;
+}
+
+.crossed {
+    color: rgb(97, 95, 95);
+    text-decoration: line-through;
+}
+
+.done {
+    background: rgb(211, 248, 228) !important;
+}
+
+.required {
+    border: 2px solid rgb(177, 54, 54);
+}
+
+.delete-tasks {
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(183, 186, 221, 0.5);
+    font-size: 22px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #504b4b;
+    color: rgb(20, 19, 19);
+    font-weight: bold;
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+}
