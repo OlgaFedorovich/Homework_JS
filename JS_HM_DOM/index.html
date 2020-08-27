@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Neucha&family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="questions">
+        <div class="container">
+            <h3>Отгадайте загадки</h3>
+            <h4>Выберите категорию:</h4>
+            <ul class="tabs_list">
+                <li class="tab active_tab">Все загадки</li>
+                <li class="tab">Загадки про природу</li>
+                <li class="tab">Загадки про человека</li>
+                <li class="tab">Загадки про овощи и огород</li>
+            </ul>
+
+            <div class="questions_content active_content">
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Крыльев нет, но я летаю. <br />
+                            Я незрим, неосязаем. <br />
+                            Но, как только осерчаю, <br />
+                            Берегись, я с ног сбиваю.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Ветер</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            По городу дождик осенний гулял, <br />
+                            Зеркальце дождик своё потерял. <br />
+                            Зеркальце то на асфальте лежит, <br />
+                            Ветер подует - оно задрожит.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>ЛУЖА</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Чуть дрожит на ветерке <br />
+                            Лента на просторе, <br />
+                            Узкий кончик — в роднике, <br />
+                            А широкий — в море.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Река</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Утром бусы засверкали, <br />
+                            Всю траву собой заткали, <br />
+                            А пошли искать их днём, <br />
+                            Ищем, ищем — не найдём. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Роса</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Люди ждут меня, зовут, <br />
+                            А приду к ним — прочь бегут.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Дождь</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Всю жизнь ходят в обгонку, <br />
+                            А обогнать друг друга не могут.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Ноги</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Ношу их много лет, <br />
+                            А счету им не знаю. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Волосы</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Пять братьев <br />
+                            Годами равные, <br />
+                            Ростом разные
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Пальцы</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            На ночь два оконца <br />
+                            Сами закрываются, <br />
+                            А с восходом солнца <br />
+                            Сами открываются.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Глаза</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Чего хочешь — <br />
+                            Того не купишь, <br />
+                            Чего не надо — <br />
+                            Того не продашь. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Молодость и старость</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Растут на грядке <br />
+                            Зелёные ветки, <br />
+                            А на ветках — <br />
+                            Красные детки.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Помидоры</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Раскололся тесный домик <br />
+                            На две половинки, <br />
+                            И посыпались оттуда <br />
+                            Бусинки-дробинки. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Горох</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Сидит дед, в сто шуб одет. <br />
+                            Кто его раздевает, <br />
+                            Тот слёзы проливает.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Лук</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Две сестры летом зелены, <br />
+                            К осени одна краснеет, <br />
+                            Другая — чернеет.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>красная и черная Смородина </div>
+                </div>                
+            </div>
+
+            <div class="questions_content">
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Крыльев нет, но я летаю. <br />
+                            Я незрим, неосязаем. <br />
+                            Но, как только осерчаю, <br />
+                            Берегись, я с ног сбиваю.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Ветер</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            По городу дождик осенний гулял, <br />
+                            Зеркальце дождик своё потерял. <br />
+                            Зеркальце то на асфальте лежит, <br />
+                            Ветер подует - оно задрожит.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>ЛУЖА</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Чуть дрожит на ветерке <br />
+                            Лента на просторе, <br />
+                            Узкий кончик — в роднике, <br />
+                            А широкий — в море.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Река</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Утром бусы засверкали, <br />
+                            Всю траву собой заткали, <br />
+                            А пошли искать их днём, <br />
+                            Ищем, ищем — не найдём. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Роса</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Люди ждут меня, зовут, <br />
+                            А приду к ним — прочь бегут.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Дождь</div>
+                </div> 
+            </div>
+
+            <div class="questions_content">
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Всю жизнь ходят в обгонку, <br />
+                            А обогнать друг друга не могут.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Ноги</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Ношу их много лет, <br />
+                            А счету им не знаю. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Волосы</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            На ночь два оконца <br />
+                            Сами закрываются, <br />
+                            А с восходом солнца <br />
+                            Сами открываются.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Глаза</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Пять братьев <br />
+                            Годами равные, <br />
+                            Ростом разные
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Пальцы</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Чего хочешь — <br />
+                            Того не купишь, <br />
+                            Чего не надо — <br />
+                            Того не продашь. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Молодость и старость</div>
+                </div> 
+            </div>
+
+            <div class="questions_content">
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Растут на грядке <br />
+                            Зелёные ветки, <br />
+                            А на ветках — <br />
+                            Красные детки.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Помидоры</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Раскололся тесный домик <br />
+                            На две половинки, <br />
+                            И посыпались оттуда <br />
+                            Бусинки-дробинки. 
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Горох</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Сидит дед, в сто шуб одет. <br />
+                            Кто его раздевает, <br />
+                            Тот слёзы проливает.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>Лук</div>
+                </div> 
+
+                <div class="question_wrapper">
+                    <div class="question_body" id='question_body'>
+                        <div class="question" id='question'>
+                            Две сестры летом зелены, <br />
+                            К осени одна краснеет, <br />
+                            Другая — чернеет.
+                        </div>
+                        <button class="question_button" id='question_button'></button>
+                    </div>
+                    <div class="question_answer" id='question_answer'>красная и черная Смородина </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+  
+    <script src="script.js"></script>
+    
+</body>
+</html>
