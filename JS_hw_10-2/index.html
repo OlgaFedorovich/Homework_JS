@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="dream_house">
+        <div class="container">
+
+            <h3>Жилье мечты</h3>
+            <p>Ответьте на вопросы</з>
+
+            <form >
+                <div class="question">
+                    <label for="house">Выберите тип Вашего жилья</label>
+                    <select id="house" name="housetype" required>
+                        <option value="Квартира">Квартира</option>
+                        <option value="Дом">Дом</option>
+                        <option value ="Вилла">Вилла</option>
+                    </select> 
+                </div>
+
+                <div class="question">
+                    <label for="room">Сколько комнат в Вашем жилье?</label>
+                    <select id="rooms" name="rooms" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value ="4">4</option>
+                        <option value ="5">5</option>
+                        </select> 
+                </div>
+
+                <div class="question">
+                    <label for="floors">Сколько этажей в Вашем жилье?</label>
+                    <select id="floors" name="floors" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value ="3">3</option>
+                    </select>                    
+                </div>
+
+                <div class="question">
+                    <label for="bathroom">Выберите тип ванной комнаты Вашего жилья?</label>
+                    <select id="bathroom" name="bathroom" required>
+                        <option value="Ванна">Ванна</option>
+                        <option value="Душ">Душ</option>
+                        <option value="Джаккузи">Джакузи</option>
+                    </select> 
+                </div>
+
+                <div class="question">
+                    <label for="balcony">Вы бы хотели иметь балкон?</label>
+                    <select id="balcony" name="balcony" required>
+                        <option value="true">Да</option>
+                        <option value="false">Нет</option>
+                    </select> 
+                </div>
+
+                <div class="question">
+                    <label for="parking">Вы бы хотели иметь парковочное место для Вашей машины? </label>
+                    <select id="parking" name="parking" required>
+                        <option value="true">Да</option>
+                        <option value="false">Нет</option>
+                    </select>
+                </div>
+
+                <button class="button_confirm">Подтведите введенные данные</button>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
