@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(bg3.jpg) repeat center center/cover;
+    padding-top: 100px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.form {
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(19, 15, 32, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(46, 44, 44);
+    padding: 30px;
+}
+
+.contacts {
+    background-color: rgba(19, 15, 32, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(46, 44, 44);
+    padding: 30px;
+}
+
+.form_title,
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 22px;
+}
+
+.form input,
+.form-add input  {
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto 15px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form_button button {
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    color: beige;
+    background: rgb(107, 59, 59);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    border:none;
+    margin-top: 30px;
+    background: rgb(82, 180, 175);
+}
+
+.form_button button:hover {
+    color: black;
+    background: rgb(169, 228, 225);
+}
+
+.contacts {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contacts_list ul {
+    list-style-type: none;
+}
+
+.contacts_list ul li {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px wheat;
+    padding: 30px 20px 30px 80px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    color: white;
+}
+
+.contacts_list ul li .id {
+    position: absolute;
+    font-size: 24px;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(87, 209, 203);
+    font-weight: bold;
+}
+
+.contacts_list ul li .name {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: rgb(95, 179, 176) 0px 0px 5px;
+}
+
+.contacts_list ul li div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contacts_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contacts_wrapper > div {
+    width: 40%;
+}
+
+.form_button .log-out {
+    margin-bottom: 40px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 150px;
+}
+
+.form_button .save,
+.form_button .add {
+    display: inline-block;
+}
+
+.form-add {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px wheat;
+    padding: 30px 20px;
+}
+
+.form-add .form_button {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
