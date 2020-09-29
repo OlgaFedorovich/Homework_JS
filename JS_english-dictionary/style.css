@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(bg1.jpg) repeat top center/cover;
+    font-family: 'Courier Prime', monospace;
+    font-size: 24px;
+}
+
+.dictionary {
+    min-height: 100%;
+    background: rgba(49, 47, 47, 0.8);
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size:70px;
+    color: rgb(236, 219, 188);
+    text-shadow: #000 0px 0px 10px;
+    margin-bottom: 30px;
+}
+
+.dictionary_form {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+}
+
+.dictionary_form input {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+.input_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.add, .word_btn_save {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    background: rgb(236, 219, 188);
+    color: rgb(37, 34, 34);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dictionary_list ul {
+    overflow-y: auto;
+    height: 450px;
+    width: 55%;
+    margin: 0 auto;
+}
+
+
+.dictionary_list ul li {
+    padding: 10px 20px 10px 80px;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin: 0 auto 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: url(icobook.png) no-repeat left 10px top 50%, rgba(39, 38, 38, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgb(238, 238, 214);
+    
+}
+
+.word_ru {
+    color: rgb(202, 197, 158);
+    margin-bottom: 10px;
+
+}
+
+.word_en {
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+}
+
+.word_btn {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.word_btn_delete {
+    background: url(icodelete.png) no-repeat;
+}
+
+.word_btn_edit {
+    background: url(icopen.png) no-repeat;
+}
+
+.word_btn_voice {
+    background: url(icosound.png) no-repeat;
+}
+
