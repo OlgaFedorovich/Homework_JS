@@ -7,7 +7,8 @@ const englishApp = function() {
 
     const getLocalStorage = _ => {
         const words = JSON.parse(window.localStorage.getItem('dictionary_words'));
-        if(words.length > 0) return words;
+        console.log(words);
+        if(words != null) return words;
         return false;
     };
 
