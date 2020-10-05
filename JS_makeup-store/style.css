@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header  {
+    background: url(makeup-header.jpg) no-repeat center center/cover;
+    height: 600px;
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.header_wrapper {
+    width: 600px;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.filter-products {
+    background-image: linear-gradient(to right bottom, rgb(240, 209, 214),rgba(136, 135, 135, 0.5));
+    min-height: 500px;
+}
+
+.filter-products .container {
+    padding: 30px 0px;
+}
+
+.section-title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+select, input {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 40%;
+}
+
+.submit-button {
+    display: block;
+    padding: 15px 30px;
+    border:none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    background-color: rgba(216, 111, 146, 0.5);
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color:palevioletred;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-brand, .search-tag {
+    width: 40%;
+    padding: 10px;
+}
+
+.search-brand_wrapper {
+    width: 35%;
+    margin: 0 auto;
+}
+
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.or {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tags-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 10px 20px;
+    background: palevioletred;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tag:hover {
+    background: rgba(216, 112, 147, 0.5);
+}
+
+.products-list {
+    background: url(bg-form.jpg) repeat center center/contain;
+}
+
+.products-list .container {
+    padding: 30px 0;
+}
+
+.products-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 260px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 3px #000;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+.product-item span {
+    font-weight: 700;
+}
+
+.product-img {
+    display: block;
+    margin: 0px auto 20px;
+    width: 150px;
+    height: 200px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 700;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-price {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price-item {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(77, 36, 29);
+    
+}
+
+.hidden_descr {
+    display: none;
+}
+
+.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 10px;
+    color: black;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: auto;
+}
+
+
+.line {
+    background: darkred;
+    border: none;
+    height: 2px;
+    box-shadow: 0px 0px 1px #000;
+    border-radius: 30px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.colors-wrapper {
+    width: 100%; 
+    display: flex;   
+    flex-wrap: wrap;
+    margin: 10px 0px 5px;
+    height: 25px;
+    overflow: auto;
+}
+
+.color-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    border: 1px solid rgb(83, 82, 82);
+}
+
+.product-descr {
+    font-weight: 700;
+    color: rgb(90, 36, 26);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.message {
+    font-weight: 700;
+    font-size: 22px;
+}

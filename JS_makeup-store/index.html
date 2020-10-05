@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make-up Store App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Baloo+Chettan+2:wght@400;500;700;800&family=Fredericka+the+Great&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="makeup_store.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="makeup-app">
+        <header class="header">
+            <div class="container">
+                <div class="header_wrapper">
+                    <h2 class="header-title">Wake up and make up!</h2>
+                    <div class="header-subtitle">Use search form below and explore our makeup catalog</div>                    
+                </div>
+            </div>
+        </header>
+        <section class="filter-products">
+            <div class="container">
+                <h3 class="section-title">Fill the form!</h3>
+                <div class="section-subtitle">and see results below</div>
+
+                <form method="POST">
+
+                    <div class="form-wrapper">
+
+                        <div class="search-brand">
+                            <h4>Search product by brand</h4>
+                            <div class="search-brand_wrapper">
+                                <label for="brand">Select brand</label>
+                                <select name="brand" id="brand">
+                                    <option selected>All brands</option>
+                                    <option value="annabelle">annabelle</option>
+                                    <option value="mineral fusion">mineral fusion</option>
+                                    <option value="l'oreal">l'oreal</option>
+                                    <option value="marcelle">marcelle</option>
+                                    <option value="maybelline">maybelline</option>
+                                    <option value="nyx">nyx</option>
+                                    <option value="pacifica">pacifica</option>
+                                    <option value="revlon">revlon</option>
+                                    <option value="butter london">butter london</option>
+                                    <option value="essie">essie</option>
+                                    <option value="zorah">zorah</option>
+                                    <option value="orly">orly</option>
+                                </select>
+        
+                                <label for="type">Select product type</label>
+                                <select name="type" id="type">
+                                    <option selected>All types</option>
+                                    <option value="Blush">Blush</option>
+                                    <option value="Bronzer">Bronzer</option>
+                                    <option value="Eyebrow">Eyebrow</option>
+                                    <option value="Eyeshadow">Eyeshadow</option>
+                                    <option value="Foundation">Foundation</option>
+                                    <option value="Eyeliner">Eyeliner</option>
+                                    <option value="Lip liner">Lip liner</option>
+                                    <option value="Lipstick">Lipstick</option>
+                                    <option value="Mascara">Mascara</option>
+                                    <option value="Nail polish">Nail polish</option>
+                                </select>
+        
+                                <label for="price-min">Min-price (dollars)</label>
+                                <input type="text" id="min-price" name="min-price">
+        
+                                <label for="price-max">Max-price (dollars)</label>
+                                <input type="text" id="max-price" name="max-price">
+        
+                                <label for="rating">Rating higher than</label>
+                                <select name="rating" id="rating">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>   
+                                <button type="submit" class="submit-button">Search</button>
+                            </div>
+                        </div>
+
+                        <div class="or">OR</div>
+    
+                        <div class="search-tag">
+                            <h4>Search product by tag</h4>
+                            <div class="tags-wrapper">
+                                <div class="tag" id="Gluten Free">Gluten Free</div>
+                                <div class="tag" id="Hypoallergenic">Hypoallergenic</div>
+                                <div class="tag" id="Natural">Natural</div>
+                                <div class="tag" id="Organic">Organic</div>
+                                <div class="tag" id="Vegan">Vegan</div>
+                                <div class="tag" id="alcohol free">alcohol free</div>
+                                <div class="tag" id="silicone free">silicone free</div>
+                                <div class="tag" id="Chemical Free">Chemical Free</div>
+                                <div class="tag" id="Fair Trade">Fair Trade</div>
+                                <div class="tag" id="Non-GMO">Non-GMO</div>                      
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="products-list">
+            <div class="container">
+                <h3 class="section-title">Catalog</h3>
+                <div class="section-subtitle">discover options</div>
+                <div class="products-wrapper">
+                    <div class="message">Fill the form and you ll see product items in this field!</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+</body>
+</html>
