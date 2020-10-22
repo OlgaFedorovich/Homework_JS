@@ -111,6 +111,21 @@ const createStore = function() {
         });
 
         showPopUp();
+
+    };
+
+    const closePopUp = function() {
+        const closeBtns = document.querySelectorAll('.close');
+        const hiddenDescr = document.querySelectorAll('.hidden_descr');
+        console.log(closeBtns);
+        console.log(hiddenDescr);
+
+        closeBtns.forEach((btn, index) => {
+            btn.addEventListener('click', function() {   
+                console.log(index);         
+                hiddenDescr[index].classList.toggle('active');
+            });
+        });   
     };
 
     const showPopUp = function() {
@@ -123,18 +138,6 @@ const createStore = function() {
                 hiddenDescr[index].classList.toggle('active');
             });
         });
-
-    };
-
-    const closePopUp = function() {
-        const closeBtns = document.querySelectorAll('.close');
-        const hiddenDescr = document.querySelectorAll('.hidden_descr');
-
-        closeBtns.forEach((btn, index) => {
-            btn.addEventListener('click', function() {            
-                hiddenDescr[index].classList.toggle('active');
-            });
-        });   
     };
 
     const searchBtn = document.querySelector('.submit-button');
