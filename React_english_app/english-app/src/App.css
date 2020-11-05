@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+  width: 281px;
+  height: 1024px;
+  background: #20B887;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.nav-container {
+  list-style-type: none;
+  
+  padding: 0; 
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 24px;
+  padding: 200px 0 0 0;
+  flex-direction: column;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color:white;
+  padding: 15px;
+}
+
+
+.nav-container a.active {
+  background: #F9FBFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color:  #20B887;
+  
+  margin-right: -30px;
+}
+
+.logo-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.level-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 42px;
+  color: white;
+}
+
+.btn-round {
+  background: #fff;
+  width: 54px;
+  height: 54px;
+  box-shadow: 0px 0px 5px #1c8866;
+  border-radius: 50%;
+  font-size: 30px;
+  color: gray;
+  cursor:pointer;
+  border:none;
+}
+
+.btn-round:focus {
+  outline: none;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.53)
+}
+
+.main-side-wrapper > div:nth-child(2) {
+  width: 70%;
+}
+
+.score {
+  padding: 10px;
+  width: 15%;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.main-side-wrapper {
+  padding-top: 30px;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.btn-round.add, .btn-round.close {
+  background:url(assets/plus2.png) no-repeat center center/contain;
+  margin-left: 10px;
+}
+
+.btn-round.check {
+  background:url(assets/checked1.png) no-repeat center center/contain;
+  margin-left: 10px;
+}
+
+.add {
+  transition: 0.5s linear;
+}
+
+.close {
+  transform: rotate(45deg);
+  transition: 0.5s linear;
+}
+
+.add-word-container div {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.add-word-container div input {
+  width: 200px;
+  padding: 10px;
+}
+.add-word-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.library-container {
+  margin: 20px auto 0;
+}
+
+.library-container > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.library-container > div > div {
+  width: 33%;
+  padding: 10px;
+}
+
+
+
+.library-container > div {
+  background: rgba(156, 155, 155, 0.2);
+  color: #1c8866;
+  padding: 10px;
+  border-bottom: 0.5px solid #20B887;
+
+}
+
+.learn-container {
+  background:rgba(243, 239, 239, 0.5);
+  border: grey;
+  position: relative;
+}
+
+.library-container .library-header {
+  box-shadow: 0px 0px 5px #324942;
+  font-size: 24px;
+  font-weight: 600;
+  background: rgba(4, 34, 25, 0.2);
+  
+}
+
+.library-header > div {
+  color: rgb(68, 65, 65);
+}
+
+.percentage {
+  position: absolute;
+  top:-10px;
+  left: -10px;
+  background: rgb(243, 74, 23);
+  color:white;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 5px 10px;
+}
+
+.word-translation {
+  font-size: 72px;
+  line-height: 84px;
+  color: #1c8866;
+  position: relative;
+  text-align: center;
+}
+
+.word {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  color:rgb(97, 92, 92);
+}
+
+.word-label {
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  top:0;
+  left:0;
+  color: rgba(0, 0, 0, 0.52)
+}
+
+.main-side-wrapper .learn-wrapper {
+  width: auto;
+}
+
+.main-side-wrapper .learn-wrapper .btn-next,
+.main-side-wrapper .learn-wrapper .btn-repeat {
+  color:white;
+  background: #1c8866;
+  width: 70px;
+  margin-left: auto;
+  text-align: right;
+  padding: 10px;
+  cursor:pointer;
+  margin-top: 20px;
+  font-weight: 700;
+  transition: all 0.3s linear;
+}
+
+.main-side-wrapper .learn-wrapper .btn-next:hover,
+.main-side-wrapper .learn-wrapper .btn-repeat:hover {
+  background: #6ac7aa;
+  color: black;
+}
+
+.main-side-wrapper .learn-wrapper .btn-repeat {
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+.learn-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0 100px;
+}
+
+.word-container {
+  margin-top: 100px;
+  padding: 50px 80px;
+  position: relative;
+}
+
+.word-content {
+  position: relative;
+}
+
+.library-container > div > .delete-btn {
+  position: absolute;
+  right: -65px;
+  top:50%;
+  transform: translateY(-50%);
+  display: none;
+  cursor: pointer;
+  background: url(./assets/delete.png) no-repeat center center / contain;
+  width: 50px;
+  height: 70%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px #1c8866;
+}
+
+.word-content:hover {
+  background: rgba(255, 255, 255, 0.486);
+  cursor: pointer;
+}
+
+.word-content:hover > .delete-btn {
+  display: block;
+}
+
+
