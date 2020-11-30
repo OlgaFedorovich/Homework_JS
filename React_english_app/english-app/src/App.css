@@ -5,11 +5,42 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: url(./assets/pic5.jpg) repeat center top/ contain;
+}
+
+.main-page {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  width: 100%;
+  text-align: center;
+  background: rgba(238, 235, 235, 0.4);
+}
+
+.main-page div {
+  margin-left: 240px;
+}
+
+
+.main-page h1 {
+  padding: 10px;
+  color: rgb(38, 129, 106);
+  text-shadow: rgb(30, 138, 102) 0px 0px 2px;
+  font-size: 35px;
+  background: rgba(241, 238, 238, 0.9);
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  box-shadow: 0px 0px 10px rgb(18, 53, 44);
+
 }
 
 .nav {
   width: 281px;
-  height: 1024px;
+  height: 100vh;
   background: #20B887;
   display: flex;
   justify-content: flex-start;
@@ -18,8 +49,9 @@ body {
 
 .nav-container {
   list-style-type: none;
-  
-  padding: 0; 
+  height: 100%;
+
+  padding: 0;
   display: flex;
   margin-bottom: 30px;
   font-size: 24px;
@@ -29,7 +61,7 @@ body {
 
 .nav-container a {
   text-decoration: none;
-  color:white;
+  color: white;
   padding: 15px;
 }
 
@@ -37,8 +69,8 @@ body {
 .nav-container a.active {
   background: #F9FBFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color:  #20B887;
-  
+  color: #20B887;
+
   margin-right: -30px;
 }
 
@@ -69,8 +101,8 @@ body {
   border-radius: 50%;
   font-size: 30px;
   color: gray;
-  cursor:pointer;
-  border:none;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-round:focus {
@@ -80,6 +112,9 @@ body {
 .app-wrapper {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
 }
 
 .label-title {
@@ -89,32 +124,42 @@ body {
   color: rgba(0, 0, 0, 0.53)
 }
 
-.main-side-wrapper > div:nth-child(2) {
+.main-side-wrapper>div:nth-child(2) {
   width: 70%;
 }
 
 .score {
-  padding: 10px;
+  padding: 0 10px;
   width: 15%;
   font-size: 25px;
   font-weight: 900;
+  z-index: 4;
+  color: rgb(38, 129, 106);
+  text-shadow: rgb(30, 138, 102) 0px 0px 2px;
+  background: rgba(231, 224, 224, 0.8);
+  box-shadow: 0px 0px 10px rgb(18, 53, 44);
+  text-align: center;
 }
 
 .main-side-wrapper {
-  padding-top: 30px;
+  padding-top: 80px;
   display: flex;
   width: 100%;
   align-items: flex-start;
+
 }
 
-.btn-round.add, .btn-round.close {
-  background:url(assets/plus2.png) no-repeat center center/contain;
+.btn-round.add,
+.btn-round.close {
+  background: url(assets/plus2.png) no-repeat center center/contain;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .btn-round.check {
-  background:url(assets/checked1.png) no-repeat center center/contain;
+  background: url(assets/checked1.png) no-repeat center center/contain;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .add {
@@ -135,7 +180,9 @@ body {
 .add-word-container div input {
   width: 200px;
   padding: 10px;
+  margin-top: 10px;
 }
+
 .add-word-container {
   display: flex;
   align-items: center;
@@ -146,30 +193,26 @@ body {
   margin: 20px auto 0;
 }
 
-.library-container > div {
+.library-container>div {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   text-align: center;
 }
 
-.library-container > div > div {
+.library-container>div>div {
   width: 33%;
   padding: 10px;
 }
 
-
-
-.library-container > div {
+.library-container>div {
   background: rgba(156, 155, 155, 0.2);
   color: #1c8866;
   padding: 10px;
   border-bottom: 0.5px solid #20B887;
-
 }
 
 .learn-container {
-  background:rgba(243, 239, 239, 0.5);
+  background: rgba(243, 239, 239, 0.5);
   border: grey;
   position: relative;
 }
@@ -179,19 +222,19 @@ body {
   font-size: 24px;
   font-weight: 600;
   background: rgba(4, 34, 25, 0.2);
-  
+
 }
 
-.library-header > div {
+.library-header>div {
   color: rgb(68, 65, 65);
 }
 
 .percentage {
   position: absolute;
-  top:-10px;
+  top: -10px;
   left: -10px;
   background: rgb(243, 74, 23);
-  color:white;
+  color: white;
   font-size: 24px;
   line-height: 28px;
   padding: 5px 10px;
@@ -209,15 +252,15 @@ body {
   font-weight: 300;
   font-size: 48px;
   line-height: 56px;
-  color:rgb(97, 92, 92);
+  color: rgb(97, 92, 92);
 }
 
 .word-label {
   font-size: 18px;
   line-height: 22px;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   color: rgba(0, 0, 0, 0.52)
 }
 
@@ -227,13 +270,13 @@ body {
 
 .main-side-wrapper .learn-wrapper .btn-next,
 .main-side-wrapper .learn-wrapper .btn-repeat {
-  color:white;
+  color: white;
   background: #1c8866;
   width: 70px;
   margin-left: auto;
   text-align: right;
   padding: 10px;
-  cursor:pointer;
+  cursor: pointer;
   margin-top: 20px;
   font-weight: 700;
   transition: all 0.3s linear;
@@ -272,18 +315,19 @@ body {
   position: relative;
 }
 
-.library-container > div > .delete-btn {
+.library-container>div>.delete-btn {
   position: absolute;
   right: -65px;
-  top:50%;
+  top: 50%;
   transform: translateY(-50%);
   display: none;
   cursor: pointer;
-  background: url(./assets/delete.png) no-repeat center center / contain;
+  background: url(./assets/delete.png) no-repeat center center / contain, rgba(146, 218, 190, 0.8);
   width: 50px;
   height: 70%;
   border-radius: 50%;
   box-shadow: 0px 0px 3px #1c8866;
+
 }
 
 .word-content:hover {
@@ -291,8 +335,203 @@ body {
   cursor: pointer;
 }
 
-.word-content:hover > .delete-btn {
+.word-content:hover>.delete-btn {
   display: block;
 }
 
+.mode-container {
+  padding: 25px 45px 45px 45px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
 
+.mode-container:hover {
+  box-shadow: 0px 0px 10px black;
+  cursor: pointer;
+}
+
+.mode-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  color: #52be88;
+  text-shadow: rgb(34, 32, 32) 0px 0px 2px;
+  letter-spacing: 0.5px;
+}
+
+.mode-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mode-description {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.easy-mode {
+  background: rgba(177, 231, 235, 0.5);
+}
+
+.hard-mode {
+  background: rgba(74, 143, 148, 0.4);
+
+}
+
+.easy-mode .mode-description {
+  color: rgb(56, 192, 241);
+}
+
+.hard-mode .mode-description {
+  color: rgb(32, 77, 95);
+}
+
+.mode-img {
+  width: 250px;
+  height: 150px;
+  background: #000;
+  box-shadow: 0px 0px 2px black;
+}
+
+.mode-page {
+  width: 70%;
+}
+
+/* .main-side-wrapper {
+  background: url(./assets/pic1.jpg) no-repeat;
+} */
+
+
+.game-page {
+  position: fixed;
+  height: 100%;
+  background: rgb(242, 246, 254);
+  width: 100vw;
+
+  left: 0;
+  bottom: 0;
+}
+
+.btn-exit {
+  width: 120px;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  background: rgb(40, 156, 102);
+  position: absolute;
+  top: 20px;
+  right: 350px;
+  border: none;
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+
+.btn-exit:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+.points-wrapper {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+
+.correct-title {
+  font-size: 24px;
+  color: green;
+  margin-right: 15px;
+}
+
+.error-title {
+  font-size: 24px;
+  color: rgb(128, 0, 0);
+}
+
+.mode-page a {
+  text-decoration: none;
+}
+
+.mode-title-word {
+  display: flex;
+  font-size: 140px;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(37, 146, 113);
+}
+
+.mode-title-word-descr {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.check-items {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.check-item {
+  padding: 20px;
+  width: auto;
+  background: rgba(198, 247, 247, 0.5);
+  box-shadow: 0px 0px 2px black;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.check-item:hover {
+  box-shadow: 0px 0px 5px black;
+  background: rgba(198, 247, 247, 0.8);
+}
+
+.check-mode-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.custom-input {
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+  padding: 10px 20px;
+}
+
+.custom-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.enter-btn {
+  text-align: center;
+  padding: 10px;
+  background: rgb(33, 160, 132);
+  width: 100px;
+  font-weight: 700;
+  margin-left: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.library,
+.mode-page,
+.learn-wrapper {
+  background-color: white;
+  box-shadow: 0px 0px 5px black;
+  margin-left: 15px;
+  margin-top: 10px;
+}
