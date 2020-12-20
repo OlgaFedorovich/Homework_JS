@@ -1,18 +1,27 @@
-console.log(1, 2, 3);
+// console.log(1, 2, 3);
 
-const replaceToAmmount = (string) => {
+// const replaceToAmmount = (string) => {
 
-    const stringArr = string.split('');
+//     const stringArr = string.split('');
 
-    let obj = {};
+//     let obj = {};
 
-    stringArr.forEach(item => {
-        obj[item] = (obj[item] || 0) + 1;
-    });
+//     stringArr.forEach(item => {
+//         obj[item] = (obj[item] || 0) + 1;
+//     });
 
-    const newArray = stringArr.map(item => obj[item]);
+//     const newArray = stringArr.map(item => obj[item]);
 
-    return newArray.join('');
-}
+//     return newArray.join('');
+// }
 
-console.log(replaceToAmmount('abnsowlwlancjhahs'));
+// console.log(replaceToAmmount('abnsowlwlancjhahs'));
+
+// function f() { return f}
+// var sj =  new f() instanceof f;
+// console.log(sj);
+
+function a() {
+    console.log(this)
+  }
+  a.call(null)

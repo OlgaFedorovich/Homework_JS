@@ -1,0 +1,77 @@
+@import './toggler_style.css';
+@import './menu_style.css';
+@import './categories-cards_style.css';
+@import './word-card_style.css';
+@import './statistics_style.css';
+@import './footer_style.css';
+@import './game-mode_style.css';
+@import './adaptive_style.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.english-app {
+    background: rgb(253, 237, 223);
+    height: 100%;
+    width: 100%;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.main-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.page-title {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.app-title,
+.page-title {
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(70, 67, 64);
+    text-shadow: rgb(248, 175, 132) 0px 0px 2px;
+}
+
+.app-title {
+    font-size: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.app-train-mode {
+    background: rgb(230, 250, 221);
+}

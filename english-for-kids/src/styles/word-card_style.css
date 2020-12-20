@@ -1,0 +1,113 @@
+.word-card-wrapper {
+    background-color: transparent;
+    width: 250px;
+    height: 270px;
+    perspective: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.word-card-wrapper:hover {
+    box-shadow: 0px 0px 20px rgb(97, 57, 34);
+    transition: 0.4s;
+}
+
+.word-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.word-card:focus {
+    outline: 0;
+}
+
+.rotate-card:hover {
+    box-shadow: none;
+}
+
+.rotate-card .word-card-inner,
+.word-card-wrapper:focus .word-card-inner {
+    transform: rotateY(180deg);
+}
+
+.word-card-front,
+.word-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.word-card-img {
+    width: 100%;
+    height: 75%;
+}
+
+.word-card-front {
+    background: linear-gradient(to left, rgba(71, 48, 2, 0.2), rgba(250, 182, 118, 0.5));
+    color: black;
+    z-index: 2;
+}
+
+.word-card-back {
+    background: linear-gradient(to left, rgba(71, 48, 2, 0.2), rgba(250, 182, 118, 0.7));
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.rotate-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url('./../assets/icons/rotate.png') no-repeat center center/contain;
+    cursor: pointer;
+    outline: none;
+}
+
+.rotate-btn:hover {
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: rotate(360deg);
+
+}
+
+.word-card-descr {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.word-card-train .word-card-descr {
+    display: none;
+}
+
+.word-card-train .rotate-btn {
+    display: none;
+}
+
+.word-card-wrapper.word-card-train {
+    height: 210px;
+}
+
+.word-card-train .word-card-img {
+    height: 100%;
+}
+
+.word-card-train .word-card-front,
+.word-card-train .word-card-back {
+    padding: 0;
+}

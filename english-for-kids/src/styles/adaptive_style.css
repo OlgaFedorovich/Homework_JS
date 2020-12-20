@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1024px) {
+    .english-app .container {
+        width: 90%;
+    }
+
+    .word-card-wrapper,
+    .category-card-wrapper {
+        width: 230px;
+        margin: 10px;
+    }
+
+    .statistics-table .table-header th {
+        padding: 20px 10px 30px;
+    }
+
+    .statistics-table .table-header th {
+        font-size: 16px;
+    }
+
+    .app-title {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .statistics-table {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .app-title {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .toggle-wrapper {
+        width: 130px;
+    }
+
+    .answers-wrapper {
+        padding: 10px;
+    }
+
+    .answers-descr {
+        font-size: 20px;
+    }
+
+    .statistics-table .table-header th {
+        padding: 20px 5px 25px;
+        font-size: 16px;
+    }
+
+    .statistics-table {
+        font-size: 14px;
+    }
+
+    .statistics-table .table-header th:first-child,
+    .statistics-table .table-row td:first-child {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .english-app .container {
+        width: 96%;
+    }
+
+    .statistics-table td,
+    .statistics-table th {
+        font-size: 11px;
+        border: 1px solid rgb(129, 128, 128);
+
+    }
+
+    .statistics-table .table-header th {
+        font-size: 11px;
+        padding: 20px 0 25px;
+        font-weight: 500;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .app-title {
+        display: none;
+    }
+
+    .app_menu ul {
+        padding: 40px 40px;
+    }
+
+    .menu-item a {
+        font-size: 18px;
+    }
+
+    .repeat-words-btn,
+    .reset-results-btn {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .game-message {
+        font-size: 25px;
+    }
+
+    .result-success,
+    .result-failure {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer_link {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .statistics-table td,
+    .statistics-table th {
+        font-size: 10px;
+    }
+
+    .statistics-table .table-header th {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+.app_footer {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid black;
+}
+
+.footer_logo {
+    background: url(./../assets/icons/rs_school_js.svg) no-repeat center center/ contain;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+
+.footer_link {
+    color: black;
+    margin: 20px;
+    font-weight: 500;
+}
